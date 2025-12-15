@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Properties Demo</title>
+
+    <style>
+        /* Example 1: background-color */
+        .bg-color-box {
+            width: 300px;
+            height: 150px;
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Example 2: background-image + background-repeat */
+        .bg-image-repeat {
+            width: 300px;
+            height: 200px;
+            background-image: url('https://picsum.photos/100');
+            background-repeat: repeat-x;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            background-attachment: scroll;
+        }
+
+        /* Example 3: background-image + background-size */
+        .bg-image-cover {
+            width: 300px;
+            height: 200px;
+            background-image: url('https://picsum.photos/500');
+            background-size: cover;     /* fills box while cropping */
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        /* Example 4: background-attachment */
+        body {
+            background-image: url('https://picsum.photos/1200/800');
+            background-attachment: scroll; /* background stays fixed while scrolling */
+            background-size: cover;
+        }
+
+        /* Example 5: background-clip */
+        .bg-clip-border {
+            width: 300px;
+            padding: 20px;
+            border: 10px dashed black;
+            background-color: orange;
+            background-clip: border-box;   /* background extends under border */
+            margin-bottom: 20px;
+        }
+
+        .bg-clip-padding {
+            width: 300px;
+            padding: 20px;
+            border: 10px dashed black;
+            background-color: lightgreen;
+            background-clip: padding-box;  /* background visible only up to padding */
+            margin-bottom: 20px;
+        }
+
+        .bg-clip-content {
+            width: 300px;
+            padding: 20px;
+            border: 10px dashed black;
+            background-color: pink;
+            background-clip: content-box;  /* background visible only behind content */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Background Properties Demo</h1>
+
+    <div class="bg-color-box">
+        <h2>background-color</h2>
+        This box uses a solid background color.
+    </div>
+
+    <div class="bg-image-repeat">
+        <h2 style="background:white">background-image + repeat</h2>
+        Repeating pattern background.
+    </div>
+
+    <div class="bg-image-cover">
+        <h2 style="background:white">background-size: cover</h2>
+        Image covers entire box.
+    </div>
+
+    <div class="bg-clip-border">
+        <h2>background-clip: border-box</h2>
+    </div>
+
+    <div class="bg-clip-padding">
+        <h2>background-clip: padding-box</h2>
+    </div>
+
+    <div class="bg-clip-content">
+        <h2>background-clip: content-box</h2>
+    </div>
+
+</body>
+</html>

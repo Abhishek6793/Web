@@ -1,0 +1,46 @@
+body,h1,p{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://cdn.pixabay.com/photo/2024/02/12/16/05/siguniang-mountain-8568913_1280.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+.container{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding:20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(10px); /* takes glassmorphism effect */
+    border:1px solid rgba(255, 255, 255, 0.3);
+    color:white;
+    text-align: center;
+    width:70%;
+    height:50%;
+}
+.card h1{
+    font-size:1.8rem;
+    margin-bottom:10px;
+}
+.card p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+}
+button{
+    padding:10px 20px;
+    font-size:1rem;
+    color:white;
+    background: rgba(255, 255, 255, 0.2);
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition: background 0.3s ease;
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
